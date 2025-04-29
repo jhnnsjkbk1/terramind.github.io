@@ -1,5 +1,5 @@
 ---
-title: "Nerfies: Deformable Neural Radiance Fields"
+title: Community Test
 emoji: 🧠
 colorFrom: yellow
 colorTo: indigo
