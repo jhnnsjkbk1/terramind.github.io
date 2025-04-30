@@ -67,6 +67,7 @@ We shared an example [here](todo).
 * **One win per team / individual:** you can only win **one** round, but feel free to keep sharing new ideas with the community.
 * **Grand-final refinement:** each round winner may refine their project before the final prize decision.
 
+Please read the full set of conditions in our [Terms & Conditions](https://platform.ai4eo.eu/termsandconditions.pdf) (todo).
 
 ---
 
@@ -85,4 +86,6 @@ Open a new discussion titled **`[Question] topic`** in the Community tab.
 
 Ready? **Share your breakthrough and claim the next TerraMind Innovators Award!**
 
+
+---
 
