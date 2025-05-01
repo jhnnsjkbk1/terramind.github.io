@@ -1,15 +1,15 @@
 ---
-title: TerraMind Community
-emoji: 🌍 🧠
+title: TerraMind Blue-Sky Challenge
+emoji: 🌍✨
 colorFrom: blue
-colorTo: indigo
+colorTo: green
 sdk: static
 pinned: false
 ---
 
-# TerraMind Innovators Award 🌍✨  
+# TerraMind Blue-Sky Challenge 🌍✨
 
-A **bi-monthly challenge** spotlighting the boldest, most imaginative ways to push TerraMind beyond “just another fine-tune”. 
+A **bi-monthly award** spotlighting the boldest, most imaginative ways to push TerraMind beyond “just another fine-tune”. 
 Whether you’re prototyping a new multi-modal workflow, exploring Thinking-in-Modalities, or inventing a never-seen geospatial application, we want you to share it with everyone.
 
 ---
@@ -37,10 +37,11 @@ You can **submit or update** an entry at any time; it simply rolls into the next
 
 ## 🚀 What we’re looking for
 
-1. **Originality & Impact** – the primary judging criteria. Show us something genuinely new or game-changing for the geospatial community.  
+1. **Originality & Impact** – genuinely new or game-changing for the geospatial community.
 2. **Technical Quality** – sound methodology, thoughtful experiments, clear visuals.  
-3. **Extension of TerraMind** – creative use of multi-modal inputs, generative outputs, TiM chains, etc.  
-4. **Open Science & Reproducibility** – **mandatory**. Share code, models, and data splits (or a clear plan for restricted data).
+3. **Extension of TerraMind** – creative use of multi-modal inputs, generative outputs, TiM chains, etc.
+4. **Artistic Expression & Narrative** – convincing story and immersive visuals.
+5. **Open Science & Reproducibility (mandatory)** – share code, models, and data splits (or a clear plan for restricted data).
 
 ---
 
@@ -55,7 +56,7 @@ We shared an example [here](todo).
 ---
 
 ## 🏆 Selection process
-* After each deadline, the jury short-lists **three** entries for a short online pitch (10 min presentation + 10 min discussion).  
+* After each deadline, the jury short-lists **three** entries for a short online pitch (10 min presentation + 10 min discussion).
 * One winner is declared; non-winners remain eligible for later rounds.
 * The four round winners face off in the **Grand Final** for the overall prize.
 
@@ -63,9 +64,9 @@ We shared an example [here](todo).
 
 ## 📝 Rules
 
-* **Use TerraMind:** your solution **must** leverage the TerraMind model.
-* **One win per team / individual:** you can only win **one** round, but feel free to keep sharing new ideas with the community.
-* **Grand-final refinement:** each round winner may refine their project before the final prize decision.
+* **Use TerraMind:** Your solution **must** leverage the TerraMind model.
+* **One win per team / individual:** You can only win **one** round, but feel free to keep sharing new ideas with the community.
+* **Grand-final refinement:** Each round winner may refine their project before the final prize decision.
 
 Please read the full set of conditions in our [Terms & Conditions](https://platform.ai4eo.eu/termsandconditions.pdf) (todo).
 
@@ -84,7 +85,7 @@ Check out the ideas of the [Community](https://huggingface.co/spaces/ibm-esa-geo
 ### Have a question?
 Open a new discussion titled **`[Question] topic`** in the Community tab.
 
-Ready? **Share your breakthrough and claim the next TerraMind Innovators Award!**
+Ready? **Share your breakthrough and claim the next TerraMind Blue-Sky Award!**
 
 
 ---
