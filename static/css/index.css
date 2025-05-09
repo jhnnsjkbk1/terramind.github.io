@@ -169,6 +169,11 @@ body {
     height: auto;
 }
 
+.two-thirds-image {
+    width: 66%;
+    height: auto;
+}
+
 .hero-bg{
   background-position:center 0;
   background-size:cover;
