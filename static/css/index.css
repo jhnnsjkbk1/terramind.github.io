@@ -187,6 +187,13 @@ body {
   text-justify:inter-word;/* better spacing for long lines      */
 }
 
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .container{
   padding-left:1rem;   /* ≈ 16 px on each side */
   padding-right:1rem;
