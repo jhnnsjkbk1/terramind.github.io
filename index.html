@@ -67,11 +67,13 @@
     <h2 class="title is-3">💡 How does TerraMind work?</h2>
     <ul class="content">
       <br>
-      <p>TerraMind is pretrained on dual-scale representations combining both token-level and pixel-level data across modalities. On a token level, TerraMind encodes high-level contextual information to learn cross-modal relationships, while on a pixel level, TerraMind leverages fine-grained representations to capture critical spatial nuances.</p>
+      <p>TerraMind is pretrained on dual-scale representations combining both token-level and pixel-level data across modalities. On a token level, TerraMind encodes <strong>high-level contextual information to learn cross-modal relationships</strong>, while on a pixel level, TerraMind leverages <strong>fine-grained representations to capture critical spatial nuances</strong>.</p>
       <br>
       <img src="./static/images/terramind_architecture.png" alt="Architecture" class="full-image">
       <br>
-        TerraMind leverages autoencoder-based architectures with a quantization step in the bottleneck for imagelike modalities such as Sentinel-1, Sentinel-2, LULC, NDVI, and DEM. Tokenizer encoders process an input image and generate a latent representation for each 16×16 patch, which is then discretized with finite-scalar-quantization (FSQ) into one of N codewords
+      <br>
+        TerraMind leverages autoencoder-based architectures with a <strong>quantization step in the bottleneck</strong> for imagelike modalities such as Sentinel-1, Sentinel-2, LULC, NDVI, and DEM. Tokenizer encoders process an input image and generate a latent representation for each 16×16 patch, which is then <strong>discretized with finite-scalar-quantization (FSQ)</strong> into one of N codewords.
+      <br>
       <br>
       <img src="./static/images/tokenizers.png" alt="Tokenizer Architecture" class="two-thirds-image">
     </ul>
@@ -85,14 +87,14 @@
     <img src="./static/images/performance.png" alt="Radar Plot" class="two-thirds-image">
     <br>
     <br>
-    TerraMind was benchmarked by ESA in both unimodal and multimodal settings following the community-standard PANGAEA benchmark. Overall, TerraMindv1-B outperforms all other GeoFMs by at least 3pp avg. mIoU. Importantly, TerraMind is the only foundation model approach in EO that outperforms task-specific U-Net models across the PANGAEA benchmark. Performance is approximately 2pp avg. mIoU higher for Terramindv1-L, with a peak of 5pp in multimodal datasets.
+    TerraMind was <strong>benchmarked by ESA</strong> in both unimodal and multimodal settings following the community-standard PANGAEA benchmark. Overall, TerraMindv1-B <strong>outperforms all other GeoFMs by at least 3pp avg. mIoU</strong>. Importantly, TerraMind is the <strong>only foundation model approach in EO that outperforms task-specific U-Net models across the PANGAEA benchmark</strong>. Performance is approximately 2pp avg. mIoU higher for Terramindv1-L, with a peak of 5pp in multimodal datasets.
     <br>
     <br>
     <img src="./static/images/full_comparison.png" alt="Performance Table" class="full-image">
-    "To me, what sets TerraMind apart is its ability to go beyond simply processing earth observations with computer vision algorithms. It instead has an intuitive understanding of geospatial data and our planet" said Juan Bernabé-Moreno, director of IBM Research UK and Ireland, and IBM's Accelerated Discovery lead for climate and sustainability. "At present, TerraMind is the best performing AI foundation model for Earth observation according to well-established community-benchmarks" Bernabé-Moreno added.
+    "To me, what sets TerraMind apart is its <strong>ability to go beyond simply processing earth observations with computer vision algorithms</strong>. It instead has an <strong>intuitive understanding of geospatial data and our planet</strong>" said Juan Bernabé-Moreno, director of IBM Research UK and Ireland, and IBM's Accelerated Discovery lead for climate and sustainability. "At present, TerraMind is the <strong>best performing AI foundation model for Earth observation</strong> according to well-established community-benchmarks" Bernabé-Moreno added.
     <br>
     <br>
-    "TerraMind combines insights from several modalities of training data to increase the accuracy of its outputs" said Simonetta Cheli, director of ESA Earth Observation Programmes and Head of ESRIN. "The ability to intuitively bring in contextual information and generate unseen scenarios is a critical step in unlocking the value of ESA data. Compared to competitive models, it can uncover a deeper understanding of the Earth for researchers and businesses alike."
+    "TerraMind combines insights from several modalities of training data to increase the accuracy of its outputs" said Simonetta Cheli, director of ESA Earth Observation Programmes and Head of ESRIN. "The ability to intuitively bring in contextual information and generate unseen scenarios is a <strong>critical step in unlocking the value of ESA data</strong>. Compared to competitive models, it <strong>can uncover a deeper understanding of the Earth for researchers and businesses alike</strong>."
   </div>
 </section>
 
@@ -101,7 +103,7 @@
 <section class="section alt-bg full-bleed">
   <div class="container i s-max-desktop">
     <h2 class="title is-3 mt-6">💭 What is Thinking-in-Modalities?</h2>
-    <p>During fine-tuning or inference, TerraMind can pause for a moment, imagine a helpful but absent layer, append the imagined tokens to its own input sequence, and then lets the fine-tuned encoder continue to improve its own performance. Because the imagination lives in token space, we avoid the heavy diffusion decoding that full image synthesis would require. So, TerraMind can generate any missing modality as an intermediate step — an ability we call Thinking in Modalities (TiM).</p>
+    <p>During fine-tuning or inference, TerraMind can pause for a moment, imagine a helpful but absent layer, append the imagined tokens to its own input sequence, and then lets the fine-tuned encoder continue to improve its own performance. Because the imagination lives in token space, the approach <strong>avoids the heavy diffusion decoding that full image synthesis would require</strong>. So, TerraMind can generate any missing modality as an intermediate step — an ability we call <strong>Thinking in Modalities (TiM)</strong>.</p>
     <br>
     <img src="./static/images/tim.png" alt="TiM" class="two-thirds-image">
     <br>
