@@ -20,9 +20,9 @@
   <link rel="icon" href="./static/images/favicon.ico" type="image/x-icon">
 
   <!-- Light-gray background for every 2nd block -->
-<!--  <style>-->
-<!--    section.alt-bg:nth-of-type(odd){background:#f5f5f5;}-->
-<!--  </style>-->
+  <style>
+    section.alt-bg:nth-of-type(odd){background:#f5f5f5;}
+  </style>
 </head>
 <body>
 
@@ -75,18 +75,6 @@
   </div>
 </section>
 
-<!-- ───────── TiM ───────── -->
-<section class="section alt-bg full-bleed">
-  <div class="container i s-max-desktop">
-    <h2 class="title is-3 mt-6">💭 What is Thinking-in-Modalities?</h2>
-    <p>During fine-tuning or inference, TerraMind can pause for a moment, imagine a helpful but absent layer, append the imagined tokens to its own input sequence, and then lets the fine-tuned encoder continue to improve its own performance. Because the imagination lives in token space, we avoid the heavy diffusion decoding that full image synthesis would require. So, TerraMind can generate any missing modality as an intermediate step — an ability we call Thinking in Modalities (TiM).</p>
-    <br>
-    <img src="./static/images/tim.png" alt="TiM" class="full-image">
-    <br>
-    <img src="./static/images/tim_results.png" alt="TiM Results" class="full-image">
-  </div>
-</section>
-
 <!-- ───────── Benchmark performance ───────── -->
 <section class="section alt-bg full-bleed">
   <div class="container is-max-desktop">
@@ -96,14 +84,30 @@
     TerraMind was benchmarked by ESA in both unimodal and multimodal settings following the community-standard PANGAEA benchmark. Overall, TerraMindv1-B outperforms all other GeoFMs by at least 3pp avg. mIoU. Importantly, TerraMind is the only foundation model approach in EO that outperforms task-specific U-Net models across the PANGAEA benchmark. Performance is approximately 2pp avg. mIoU higher for Terramindv1-L, with a peak of 5pp in multimodal datasets.
     <br>
     <img src="./static/images/full_comparison.png" alt="Performance Table" class="full-image">
+    "To me, what sets TerraMind apart is its ability to go beyond simply processing earth observations with computer vision algorithms. It instead has an intuitive understanding of geospatial data and our planet" said Juan Bernabé-Moreno, director of IBM Research UK and Ireland, and IBM's Accelerated Discovery lead for climate and sustainability. "At present, TerraMind is the best performing AI foundation model for Earth observation according to well-established community-benchmarks" Bernabé-Moreno added.
+    <br>
+    "TerraMind combines insights from several modalities of training data to increase the accuracy of its outputs" said Simonetta Cheli, director of ESA Earth Observation Programmes and Head of ESRIN. "The ability to intuitively bring in contextual information and generate unseen scenarios is a critical step in unlocking the value of ESA data. Compared to competitive models, it can uncover a deeper understanding of the Earth for researchers and businesses alike."
   </div>
 </section>
 
 
+<!-- ───────── TiM ───────── -->
+<section class="section alt-bg full-bleed">
+  <div class="container i s-max-desktop">
+    <h2 class="title is-3 mt-6">💭 What is Thinking-in-Modalities?</h2>
+    <p>During fine-tuning or inference, TerraMind can pause for a moment, imagine a helpful but absent layer, append the imagined tokens to its own input sequence, and then lets the fine-tuned encoder continue to improve its own performance. Because the imagination lives in token space, we avoid the heavy diffusion decoding that full image synthesis would require. So, TerraMind can generate any missing modality as an intermediate step — an ability we call Thinking in Modalities (TiM).</p>
+    <br>
+    <img src="./static/images/tim.png" alt="TiM" class="full-image">
+    <br>
+    "TiM tuning boosts data efficiency by self-generating the additional training data relevant to the problem being addressed — for example, by telling the model to “think” about land cover when mapping water bodies. This breakthrough can unlock unprecedented accuracy when specializing TerraMind for particular use cases" said Johannes Jakubik, an IBM Research scientist based in Zurich.
+    <img src="./static/images/tim_results.png" alt="TiM Results" class="full-image">
+  </div>
+</section>
+
 <!-- ───────── Few-Shot performance ───────── -->
 <section class="section alt-bg full-bleed">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">⭐️ Exploring the embedding space via few-shot classification</h2>
+    <h2 class="title is-3">⭐️ Exploring the embedding space via one-shot classification</h2>
     <img src="./static/images/few_shot.png" alt="Few Shot" class="full-image">
     <br>
     TerraMind's embedding space is particularly well structured.
@@ -117,12 +121,24 @@
     <br>
     <a href="https://huggingface.co/spaces/ibm-esa-geospatial/challenge" class="button is-link is-normal is-rounded is-dark">
         TerraMind Blue-Sky Challenge
+    </a>
     <br>
     Find out more about our TerraMind Blue-Sky challenge here and the associated 1'000 EUR cash prizes.
-    </a>
   </div>
 </section>
 
+
+<section class="section alt-bg full-bleed">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">📽️ Voices on TerraMin</h2>
+    <br>
+    <iframe width="560" height="315" src="https://dlmultimedia.esa.int/download/public/videos/2025/04/031/2504_031_AR_EN.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    ESA: "TerraMind is a powerful new AI tool designed to help us better understand and protect our planet. By combining different types of Earth observation data, it can deliver accurate answers to questions about climate and nature. From spotting methane leaks to tracking changes in forests and land use, TerraMind is set to play a key role in tackling some of the current environmental challenges."
+    <br>
+    "With Earth observation science, technology, and international collaboration, we are unlocking the full potential of space-based data to protect our planet" said Nicolas Longepe, Earth Observation Data Scientist at ESA. "This project is a perfect example where the scientific community, big tech companies, and experts have collaborated to leverage this technology for the benefit of Earth sciences. The magic happens when earth observation data experts, machine learning experts, data scientists, and HPC engineers come together."
+  </div>
+</section>
 
 <!-- ───────────────────── FOOTER ───────────────────── -->
 <footer class="footer full-bleed">
