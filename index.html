@@ -5,9 +5,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="TerraMind: Any-to-any generation for Earth Observation">
-  <meta name="keywords" content="TerraMind, geospatial AI, challenge, foundation models">
-  <meta name="author" content="IBM & ESA">
+        content="TerraMind: Large-Scale Generative Multimodality for Earth Observation">
+  <meta name="keywords" content="TerraMind, geospatial AI, multi-modality, foundation models">
+  <meta name="author" content="IBM">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TerraMind Blue-Sky Challenge</title>
 
@@ -31,14 +31,20 @@
     <div class="container is-max-desktop has-text-centered">
 <!--      <h1 class="title is-1 white">TerraMind Blue-Sky Challenge</h1>-->
       <h1 class="title is-1 white">
-        <img src="./static/images/Logo medium white.svg" alt="Logo" class="title-logo">
-        TerraMind&nbsp;Blue-Sky&nbsp;Challenge
+        <img src="./static/images/boston.svg" alt="Logo" class="title-logo">
+        TerraMind: Large-Scale Generative Multimodality for Earth Observation
       </h1>
       <br>
       <p class="subtitle is-5 has-text-weight-semibold white">organized by IBM and ESA</p>
       <!-- submit button -->
-      <a href="#submit" class="button is-link is-normal is-rounded is-dark">
-        Submit Your Idea
+      <a href="https://huggingface.co/ibm-esa-geospatial" class="button is-link is-normal is-rounded is-dark">
+        Try it out on HuggingFace!
+      </a>
+      <a href="https://arxiv.org/pdf/2504.11171" class="button is-link is-normal is-rounded is-dark">
+        Find our arXiv preprint!
+      </a>
+      <a href="https://arxiv.org/pdf/2504.11172" class="button is-link is-normal is-rounded is-dark">
+        Learn more about the TerraMesh dataset!
       </a>
     </div>
   </div>
@@ -49,125 +55,42 @@
 <section class="section alt-bg full-bleed intro-block">
   <div class="container is-max-desktop">
     <p class="intro">
-      A <strong>bi-monthly award</strong> spotlighting the boldest, most imaginative ways to push
-      TerraMind beyond “just another fine-tune”. Whether you’re prototyping a new multi-modal
-      workflow, exploring Thinking-in-Modalities, or inventing a never-seen geospatial
-      application, we want you to share it with everyone.
+      <strong>Meet TerraMind</strong>, the first any-to-any generative, multimodal foundation model for Earth observation. TerraMind represents new levels of understanding geospatial data, introduces new capabilities such as Thinking-in-Modalities (TiM), and outperforms existing models significantly across benchmarks like PANGAEA.
     </p>
   </div>
 </section>
 
-<!-- ───────── BENEFITS ───────── -->
+<!-- ───────── Architecture ───────── -->
 <section class="section alt-bg full-bleed">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">🎯 What’s in it for you?</h2>
+    <h2 class="title is-3">💡 How does TerraMind work?</h2>
     <ul class="content">
-      <li><strong>€1 000 cash</strong> for each round winner (June, August, October, December).</li>
-      <li><strong>Grand Final Prize</strong> — community prestige and more, decided in January from the four round winners.</li>
+      <img src="./static/images/terramind_architecture.png" alt="Logo" class="title-logo">
       <br>
-      <li>Potential publication in a joint wrap-up paper and broad visibility across IBM, ESA, and the EO community.</li>
+      <p>TerraMind is pretrained on dual-scale representations combining both token-level and pixel-level data across modalities. On a token level, TerraMind encodes high-level contextual information to learn cross-modal relationships, while on a pixel level, TerraMind leverages fine-grained representations to capture critical spatial nuances.</p>
     </ul>
   </div>
 </section>
 
-<!-- ───────── TIMELINE ───────── -->
+<!-- ───────── TiM ───────── -->
 <section class="section alt-bg full-bleed">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 mt-6">🗓️ 2025 Timeline</h2>
-    <table class="table is-striped is-fullwidth">
-      <thead>
-        <tr>
-          <th>Round</th>
-          <th>Submission deadline</th>
-          <th>Pitch & Winner Announcement</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>1</td><td><strong>30 Jun 2025</strong></td><td>Early July</td></tr>
-        <tr><td>2</td><td><strong>31 Aug 2025</strong></td><td>Early September</td></tr>
-        <tr><td>3</td><td><strong>31 Oct 2025</strong></td><td>Early November</td></tr>
-        <tr><td>4</td><td><strong>31 Dec 2025</strong></td><td>Early January 2026</td></tr>
-        <tr><td colspan="2"><strong>Grand Final</strong></td><td>Mid-January 2026</td></tr>
-      </tbody>
-    </table>
-
-    <p>Deadlines are set to 23:59 Anywhere-on-Earth (AoE).</p>
+    <h2 class="title is-3 mt-6">💭What is Thinking-in-Modalities?</h2>
+    <p>During fine-tuning or inference, TerraMind can pause for a moment, imagine a helpful but absent layer, append the imagined tokens to its own input sequence, and then lets the fine-tuned encoder continue to improve its own performance. Because the imagination lives in token space, we avoid the heavy diffusion decoding that full image synthesis would require. So, TerraMind can generate any missing modality as an intermediate step — an ability we call Thinking in Modalities (TiM).</p>
     <br>
-    <p>You can <strong>submit or update</strong> an entry at any time; it rolls into the next open round until it wins or the challenge ends.</p>
+    <img src="./static/images/tim.png" alt="Logo" class="title-logo">
   </div>
 </section>
 
-<!-- ───────── WHAT WE’RE LOOKING FOR ───────── -->
+<!-- ───────── Benchmark performance ───────── -->
 <section class="section alt-bg full-bleed">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">🚀 What we’re looking for</h2>
-    <ol class="content">
-      <li><strong>Originality & Impact</strong> – genuinely new or game-changing for the geospatial community.</li>
-      <li><strong>Technical Quality</strong> – sound methodology, thoughtful experiments, clear visuals.</li>
-      <li><strong>Extension of TerraMind</strong> – creative use of multi-modal inputs, generative outputs, TiM chains, etc.</li>
-      <li><strong>Artistic Expression & Narrative</strong> – convincing story and immersive visuals.</li>
-      <li><strong>Open Science & Reproducibility</strong> – share code, models, and data splits (or a clear plan for restricted data).</li>
-    </ol>
-  </div>
-</section>
-
-<!-- ───────── HOW TO SUBMIT ───────── -->
-<section class="section alt-bg full-bleed" id="submit">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">📬 How to submit</h2>
-    <ol class="content">
-      <li>
-        Start a <strong>new discussion</strong> in the
-        <a href="https://huggingface.co/spaces/ibm-esa-geospatial/community/discussions" target="_blank">Community</a>
-        tab and describe your solution.
-      </li>
-      <li>Keep it under <strong>1 000 words</strong> – include images, tables, and a clear <strong>contact email</strong>.</li>
-      <li>Link your repository, longer blog, or paper.</li>
-      <li>That’s it – we’ll reach out if you’re selected for the pitch.</li>
-    </ol>
-
-    <p>You can find an example submission
-      <a href="https://huggingface.co/spaces/ibm-esa-geospatial/challenge/discussions/1" target="_blank">here</a>.
-    </p>
-
-  </div>
-</section>
-
-<!-- ───────── SELECTION ───────── -->
-<section class="section alt-bg full-bleed">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">🏆 Selection process</h2>
-    <ul class="content">
-      <li>The jury short-lists <strong>three</strong> entries for a 10 min online pitch + 10 min Q&A after each deadline.</li>
-      <li>One winner is declared; non-winners remain eligible for later rounds.</li>
-      <li>The four round winners face off in the <strong>Grand Final</strong> for the overall prize.</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ───────── RULES ───────── -->
-<section class="section alt-bg full-bleed">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">📝 Rules</h2>
-    <ul class="content">
-      <li><strong>Use TerraMind:</strong> your solution <strong>must</strong> leverage the TerraMind model.</li>
-      <li><strong>One win per working group/individual:</strong> you can win only <strong>one</strong> round, but keep sharing great ideas.</li>
-      <li><strong>Grand-final refinement:</strong> each round winner may refine their project before the final decision.</li>
-    </ul>
-    <p>Individuals affiliated with IBM or ESA are not eligible to receive an award.</p>
-<!--    <p>Please read the full set of conditions in our-->
-<!--      <a href="https://platform.ai4eo.eu/termsandconditions.pdf" target="_blank">Terms & Conditions</a>.-->
-<!--    </p>-->
-  </div>
-</section>
-
-<!-- ───────── JURY ───────── -->
-<section class="section alt-bg full-bleed">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">👩‍⚖️ Jury</h2>
-    <p class="content">
-      Experts from IBM, ESA, and independent researchers with deep experience in geospatial AI.
-    </p>
+    <h2 class="title is-3">🚀 How does TerraMind compare to other models?</h2>
+    <img src="./static/images/performance.pdf" alt="Logo" class="title-logo">
+    <br>
+    TerraMind was benchmarked by ESA in both unimodal and multimodal settings following the community-standard PANGAEA benchmark. Overall, TerraMindv1-B outperforms all other GeoFMs by at least 3pp avg. mIoU. Importantly, TerraMind is the only foundation model approach in EO that outperforms task-specific U-Net models across the PANGAEA benchmark. Performance is approximately 2pp avg. mIoU higher for Terramindv1-L, with a peak of 5pp in multimodal datasets.
+    <br>
+    <img src="./static/images/full_comparison.png" alt="Logo" class="title-logo">
   </div>
 </section>
 
@@ -218,7 +141,7 @@
 <!-- ───────────────────── FOOTER ───────────────────── -->
 <footer class="footer full-bleed">
   <div class="container content has-text-centered">
-    <p>© 2025 IBM & ESA – TerraMind Blue-Sky Challenge</p>
+    <p>© 2025 IBM & ESA – TerraMind</p>
     <p>
       This site reuses elements from the
       <a href="https://github.com/nerfies/nerfies.github.io" target="_blank">Nerfies template</a>
