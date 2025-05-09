@@ -164,6 +164,11 @@ body {
   padding-left:0; padding-right:0;
 }
 
+.full-image {
+    width: 100%;
+    height: auto;
+}
+
 .hero-bg{
   background-position:center 0;
   background-size:cover;

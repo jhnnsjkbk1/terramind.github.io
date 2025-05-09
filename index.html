@@ -31,7 +31,7 @@
     <div class="container is-max-desktop has-text-centered">
 <!--      <h1 class="title is-1 white">TerraMind Blue-Sky Challenge</h1>-->
       <h1 class="title is-1 white">
-        <img src="./static/images/boston.svg" alt="Logo" class="title-logo">
+        <img src="./static/images/boston.svg" alt="Boston Generations" class="full-image">
         TerraMind: Large-Scale Generative Multimodality for Earth Observation
       </h1>
       <br>
@@ -65,7 +65,7 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3">💡 How does TerraMind work?</h2>
     <ul class="content">
-      <img src="./static/images/terramind_architecture.png" alt="Logo" class="title-logo">
+      <img src="./static/images/terramind_architecture.png" alt="Architecture" class="full-image">
       <br>
       <p>TerraMind is pretrained on dual-scale representations combining both token-level and pixel-level data across modalities. On a token level, TerraMind encodes high-level contextual information to learn cross-modal relationships, while on a pixel level, TerraMind leverages fine-grained representations to capture critical spatial nuances.</p>
     </ul>
@@ -75,7 +75,7 @@
 <!-- ───────── TiM ───────── -->
 <section class="section alt-bg full-bleed">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 mt-6">💭What is Thinking-in-Modalities?</h2>
+    <h2 class="title is-3 mt-6">💭 What is Thinking-in-Modalities?</h2>
     <p>During fine-tuning or inference, TerraMind can pause for a moment, imagine a helpful but absent layer, append the imagined tokens to its own input sequence, and then lets the fine-tuned encoder continue to improve its own performance. Because the imagination lives in token space, we avoid the heavy diffusion decoding that full image synthesis would require. So, TerraMind can generate any missing modality as an intermediate step — an ability we call Thinking in Modalities (TiM).</p>
     <br>
     <img src="./static/images/tim.png" alt="Logo" class="title-logo">
@@ -86,57 +86,28 @@
 <section class="section alt-bg full-bleed">
   <div class="container is-max-desktop">
     <h2 class="title is-3">🚀 How does TerraMind compare to other models?</h2>
-    <img src="./static/images/performance.pdf" alt="Logo" class="title-logo">
+    <img src="./static/images/performance.pdf" alt="Radar Plot" class="full-image">
     <br>
     TerraMind was benchmarked by ESA in both unimodal and multimodal settings following the community-standard PANGAEA benchmark. Overall, TerraMindv1-B outperforms all other GeoFMs by at least 3pp avg. mIoU. Importantly, TerraMind is the only foundation model approach in EO that outperforms task-specific U-Net models across the PANGAEA benchmark. Performance is approximately 2pp avg. mIoU higher for Terramindv1-L, with a peak of 5pp in multimodal datasets.
     <br>
-    <img src="./static/images/full_comparison.png" alt="Logo" class="title-logo">
+    <img src="./static/images/full_comparison.png" alt="Performance Table" class="full-image">
   </div>
 </section>
 
-<!-- ───────── SPARK & FAQ ───────── -->
+
+<!-- ───────── Benchmark performance ───────── -->
 <section class="section alt-bg full-bleed">
-<!--  <p class="content has-text-centered">-->
-<!--      <strong>Ready? Share your breakthrough and claim the next TerraMind Blue-Sky Award!</strong>-->
-<!--  </p>-->
-
   <div class="container is-max-desktop">
-    <h2 class="title is-5">Need a spark?</h2>
-    <p class="content">
-      Browse community ideas in the
-      <a href="https://huggingface.co/spaces/ibm-esa-geospatial/community/discussions" target="_blank">Community</a>
-      tab and leave a reaction if you like them.
-    </p>
-
-    <h2 class="title is-5 mt-6">Have a question?</h2>
-
-    <p class="content">
-      <strong>Where do I find more information on TerraMind?</strong><br>
-      We provide details in our <a href="https://arxiv.org/abs/2504.11171" target="_blank">pre-print</a> and the model is available on <a href="https://huggingface.co/ibm-esa-geospatial/TerraMind-1.0-base" target="_blank">Hugging Face</a>.
-    </p>
-
-    <p class="content">
-      <strong>Can I submit more than one idea?</strong><br>
-      Yes—submit as many innovations as you like, but remember that each team or individual can only win one round.
-    </p>
-
-    <p class="content">
-    <strong>Do I have to open-source my code and data?</strong><br>
-    Yes and no. It's not mandatory, but we value it in the spirit of open science and reproducibility during the evaluation.
-    </p>
-
-    <p class="content">
-    <strong>Can I reuse work already published elsewhere?</strong><br>
-    Yes, you should even link to the published work in your post.
-    </p>
-
-    <p class="content">
-      <strong>Still unclear?</strong><br>
-      Open a new discussion titled <code>[Question] topic</topic></code> in the Community tab.
-    </p>
+    <h2 class="title is-3">🏆 Need a challenge?</h2>
     <br>
+    Find out more about our TerraMind Blue-Sky challenge here and the associated 1'000 EUR cash prizes.
+    <br>
+    <a href="https://huggingface.co/spaces/ibm-esa-geospatial/challenge" class="button is-link is-normal is-rounded is-dark">
+        TerraMind Blue-Sky Challenge
+    </a>
   </div>
 </section>
+
 
 <!-- ───────────────────── FOOTER ───────────────────── -->
 <footer class="footer full-bleed">
