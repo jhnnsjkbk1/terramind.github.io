@@ -201,6 +201,11 @@ body {
     height: 100vh;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
 .container{
   padding-left:1rem;   /* ≈ 16 px on each side */
   padding-right:1rem;

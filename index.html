@@ -9,7 +9,7 @@
   <meta name="keywords" content="TerraMind, geospatial AI, multi-modality, foundation models">
   <meta name="author" content="IBM">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TerraMind Blue-Sky Challenge</title>
+  <title>IBM-ESA TerraMind</title>
 
   <!-- Fonts & CSS -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -40,22 +40,22 @@
       <br>
       <!-- submit button -->
       <a href="https://huggingface.co/ibm-esa-geospatial" class="button is-link is-normal is-rounded is-dark">
-        Try it out on HuggingFace!
+        Try it out on HuggingFace
       </a>
       <br>
       <br>
       <a href="https://arxiv.org/pdf/2504.11171" class="button is-link is-normal is-rounded is-dark">
-        Find our arXiv preprint!
+        Find our arXiv preprint
       </a>
       <br>
       <br>
       <a href="https://arxiv.org/pdf/2504.11172" class="button is-link is-normal is-rounded is-dark">
-        Learn more about the TerraMesh dataset!
+        Learn more about the TerraMesh dataset
       </a>
       <br>
       <br>
       <a href="https://github.com/ibm/terramind" class="button is-link is-normal is-rounded is-dark">
-        Find code for finetuning on GitHub!
+        Find code for finetuning on GitHub
       </a>
     </div>
   </div>
@@ -66,10 +66,12 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3">💡 How does TerraMind work?</h2>
     <ul class="content">
-      <img src="./static/images/terramind_architecture.png" alt="Architecture" class="full-image">
-      <br>
       <br>
       <p>TerraMind is pretrained on dual-scale representations combining both token-level and pixel-level data across modalities. On a token level, TerraMind encodes high-level contextual information to learn cross-modal relationships, while on a pixel level, TerraMind leverages fine-grained representations to capture critical spatial nuances.</p>
+      <br>
+      <img src="./static/images/terramind_architecture.png" alt="Architecture" class="full-image">
+      <br>
+        TerraMind leverages autoencoder-based architectures with a quantization step in the bottleneck for imagelike modalities such as Sentinel-1, Sentinel-2, LULC, NDVI, and DEM. Tokenizer encoders process an input image and generate a latent representation for each 16×16 patch, which is then discretized with finite-scalar-quantization (FSQ) into one of N codewords
       <br>
       <img src="./static/images/tokenizers.png" alt="Tokenizer Architecture" class="two-thirds-image">
     </ul>
@@ -126,14 +128,15 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3">🏆 Need a challenge?</h2>
     <br>
-    <a href="https://huggingface.co/spaces/ibm-esa-geospatial/challenge" class="button is-link is-normal is-rounded is-dark">
-        TerraMind Blue-Sky Challenge
-    </a>
+    <div class="button-container">
+      <a href="https://huggingface.co/spaces/ibm-esa-geospatial/challenge" class="button is-link is-normal is-rounded is-dark">
+          TerraMind Blue-Sky Challenge
+      </a>
+    </div>
     <br>
     Find out more about our TerraMind Blue-Sky challenge here and the associated 1'000 EUR cash prizes.
   </div>
 </section>
-
 
 <section class="section alt-bg full-bleed">
   <div class="container is-max-desktop">
