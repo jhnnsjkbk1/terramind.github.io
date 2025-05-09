@@ -170,6 +170,8 @@ body {
 }
 
 .two-thirds-image {
+    display: block;
+    margin: auto;
     width: 66%;
     height: auto;
 }
