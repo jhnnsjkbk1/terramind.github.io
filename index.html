@@ -20,9 +20,9 @@
   <link rel="icon" href="./static/images/favicon.ico" type="image/x-icon">
 
   <!-- Light-gray background for every 2nd block -->
-  <style>
-    section.alt-bg:nth-of-type(odd){background:#f5f5f5;}
-  </style>
+<!--  <style>-->
+<!--    section.alt-bg:nth-of-type(odd){background:#f5f5f5;}-->
+<!--  </style>-->
 </head>
 <body>
 
@@ -56,7 +56,7 @@
 <section class="section alt-bg full-bleed intro-block">
   <div class="container is-max-desktop">
     <p class="intro">
-      <strong>Meet TerraMind</strong>, the first any-to-any generative, multimodal foundation model for Earth observation. TerraMind represents new levels of understanding geospatial data, introduces new capabilities such as Thinking-in-Modalities (TiM), and outperforms existing models significantly across benchmarks like PANGAEA.
+      <strong>Meet TerraMind</strong>, the first any-to-any generative, multimodal foundation model for Earth observation. TerraMind represents new levels of understanding geospatial data, introduces new capabilities such as Thinking-in-Modalities (TiM), and outperforms existing models significantly across community-standard benchmarks.
     </p>
   </div>
 </section>
@@ -69,17 +69,21 @@
       <img src="./static/images/terramind_architecture.png" alt="Architecture" class="full-image">
       <br>
       <p>TerraMind is pretrained on dual-scale representations combining both token-level and pixel-level data across modalities. On a token level, TerraMind encodes high-level contextual information to learn cross-modal relationships, while on a pixel level, TerraMind leverages fine-grained representations to capture critical spatial nuances.</p>
+      <br>
+      <img src="./static/images/tokenizers.png" alt="Tokenizer Architecture" class="full-image">
     </ul>
   </div>
 </section>
 
 <!-- ───────── TiM ───────── -->
 <section class="section alt-bg full-bleed">
-  <div class="container is-max-desktop">
+  <div class="container i s-max-desktop">
     <h2 class="title is-3 mt-6">💭 What is Thinking-in-Modalities?</h2>
     <p>During fine-tuning or inference, TerraMind can pause for a moment, imagine a helpful but absent layer, append the imagined tokens to its own input sequence, and then lets the fine-tuned encoder continue to improve its own performance. Because the imagination lives in token space, we avoid the heavy diffusion decoding that full image synthesis would require. So, TerraMind can generate any missing modality as an intermediate step — an ability we call Thinking in Modalities (TiM).</p>
     <br>
     <img src="./static/images/tim.png" alt="TiM" class="full-image">
+    <br>
+    <img src="./static/images/tim_results.png" alt="TiM Results" class="full-image">
   </div>
 </section>
 
@@ -87,7 +91,7 @@
 <section class="section alt-bg full-bleed">
   <div class="container is-max-desktop">
     <h2 class="title is-3">🚀 How does TerraMind compare to other models?</h2>
-    <img src="./static/images/performance.pdf" alt="Radar Plot" class="full-image">
+    <img src="./static/images/performance.png" alt="Radar Plot" class="full-image">
     <br>
     TerraMind was benchmarked by ESA in both unimodal and multimodal settings following the community-standard PANGAEA benchmark. Overall, TerraMindv1-B outperforms all other GeoFMs by at least 3pp avg. mIoU. Importantly, TerraMind is the only foundation model approach in EO that outperforms task-specific U-Net models across the PANGAEA benchmark. Performance is approximately 2pp avg. mIoU higher for Terramindv1-L, with a peak of 5pp in multimodal datasets.
     <br>
@@ -96,15 +100,25 @@
 </section>
 
 
+<!-- ───────── Few-Shot performance ───────── -->
+<section class="section alt-bg full-bleed">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">⭐️ Exploring the embedding space via few-shot classification</h2>
+    <img src="./static/images/few_shot.png" alt="Few Shot" class="full-image">
+    <br>
+    TerraMind's embedding space is particularly well structured.
+  </div>
+</section>
+
 <!-- ───────── Benchmark performance ───────── -->
 <section class="section alt-bg full-bleed">
   <div class="container is-max-desktop">
     <h2 class="title is-3">🏆 Need a challenge?</h2>
     <br>
-    Find out more about our TerraMind Blue-Sky challenge here and the associated 1'000 EUR cash prizes.
-    <br>
     <a href="https://huggingface.co/spaces/ibm-esa-geospatial/challenge" class="button is-link is-normal is-rounded is-dark">
         TerraMind Blue-Sky Challenge
+    <br>
+    Find out more about our TerraMind Blue-Sky challenge here and the associated 1'000 EUR cash prizes.
     </a>
   </div>
 </section>
